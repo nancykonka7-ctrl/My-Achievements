@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nancy's Journey</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= LOGIN PAGE ================= -->
+
+<div class="login-page" id="loginPage">
+
+    <div class="login-container">
+
+        <div class="login-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=900&q=80"
+                alt="Personal journey">
+
+        </div>
+
+        <div class="login-box">
+
+            <div class="login-icon">
+                ✨
+            </div>
+
+            <h1>
+                Nancy's <span>Journey</span>
+            </h1>
+
+            <p class="welcome">
+                Welcome to my personal blog!
+            </p>
+
+            <h2>
+                Login
+            </h2>
+
+            <input
+                type="text"
+                id="username"
+                placeholder="👤 Username">
+
+            <input
+                type="password"
+                id="password"
+                placeholder="🔒 Password">
+
+            <button onclick="login()">
+                Login
+            </button>
+
+            <p id="loginMessage"></p>
+
+            <div class="demo-login">
+
+                <strong>Demo Login</strong>
+
+                <p>
+                    Username: <b>Nancy</b>
+                </p>
+
+                <p>
+                    Password: <b>Nancy@123</b>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= MAIN WEBSITE ================= -->
+
+<div id="mainWebsite">
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+        Nancy's <span>Journey</span>
+    </div>
+
+    <nav id="navbar">
+
+        <a href="#home">
+            Home
+        </a>
+
+        <a href="#about">
+            About Me
+        </a>
+
+        <a href="#passions">
+            Passions
+        </a>
+
+        <a href="#achievements">
+            Achievements
+        </a>
+
+        <a href="#journey">
+            Journey
+        </a>
+
+        <a href="#blog">
+            Blog
+        </a>
+
+        <a href="#contact">
+            Contact
+        </a>
+
+    </nav>
+
+    <button
+        class="menu-btn"
+        onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <button
+        class="dark-btn"
+        onclick="toggleDarkMode()">
+        🌙
+    </button>
+
+</header>
+
+
+<!-- ================= HOME ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-text">
+
+        <p class="small-title">
+            WELCOME TO MY JOURNEY
+        </p>
+
+        <h1>
+            Dream.
+            <br>
+
+            <span>Create.</span>
+            <br>
+
+            Achieve.
+        </h1>
+
+        <p>
+            A personal space where I share my passions,
+            achievements, experiences, goals and lessons
+            from my journey.
+        </p>
+
+        <a
+            href="#blog"
+            class="main-btn">
+
+            Explore My Blog
+
+        </a>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <!-- YOUR PROFILE PHOTO -->
+
+        <img
+            src="pic.jpg"
+            alt="Nancy's profile picture">
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="profile">
+
+        <!-- YOUR PROFILE PHOTO -->
+
+        <img
+            src="pic.jpg"
+            alt="Nancy's profile picture">
+
+    </div>
+
+
+    <div class="about-text">
+
+        <p class="small-title">
+            ABOUT ME
+        </p>
+
+        <h2>
+            Hi, I'm <span>Nancy</span> 👋
+        </h2>
+
+        <p>
+            Welcome to my personal blogging website!
+            This is a place where I share my interests,
+            experiences, achievements and the lessons
+            I learn along the way.
+        </p>
+
+        <p>
+            I believe that every small step is part of
+            a bigger journey. Through this blog, I want
+            to document my progress, celebrate my
+            achievements and inspire others.
+        </p>
+
+        <a
+            href="#journey"
+            class="main-btn">
+
+            My Journey
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PASSIONS ================= -->
+
+<section
+    class="passions"
+    id="passions">
+
+    <p class="small-title">
+        WHAT I LOVE
+    </p>
+
+    <h2>
+        My Passions ❤️
+    </h2>
+
+    <p class="section-intro">
+        The things that inspire me and keep me
+        motivated to learn and grow.
+    </p>
+
+    <div class="card-container">
+
+
+        <div class="passion-card">
+
+            <div class="card-icon">
+                💻
+            </div>
+
+            <h3>
+                Technology
+            </h3>
+
+            <p>
+                Exploring technology and learning
+                how digital tools can solve problems.
+            </p>
+
+        </div>
+
+
+        <div class="passion-card">
+
+            <div class="card-icon">
+                🤖
+            </div>
+
+            <h3>
+                AI & Machine Learning
+            </h3>
+
+            <p>
+                Learning about artificial intelligence,
+                machine learning and new technologies.
+            </p>
+
+        </div>
+
+
+        <div class="passion-card">
+
+            <div class="card-icon">
+                ✍️
+            </div>
+
+            <h3>
+                Writing
+            </h3>
+
+            <p>
+                Sharing my thoughts, experiences and
+                ideas through writing.
+            </p>
+
+        </div>
+
+
+        <div class="passion-card">
+
+            <div class="card-icon">
+                🌱
+            </div>
+
+            <h3>
+                Personal Growth
+            </h3>
+
+            <p>
+                Learning new skills and becoming better
+                through every experience.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ACHIEVEMENTS ================= -->
+
+<section
+    class="achievements"
+    id="achievements">
+
+    <p class="small-title">
+        MY MILESTONES
+    </p>
+
+    <h2>
+        My Achievements 🏆
+    </h2>
+
+    <div class="achievement-container">
+
+
+        <div class="achievement-card">
+
+            <div class="achievement-number">
+                01
+            </div>
+
+            <h3>
+                Academic Achievement
+            </h3>
+
+            <p>
+                Successfully progressing through my
+                academic journey and continuously
+                developing new skills.
+            </p>
+
+        </div>
+
+
+        <div class="achievement-card">
+
+            <div class="achievement-number">
+                02
+            </div>
+
+            <h3>
+                Web Development
+            </h3>
+
+            <p>
+                Created my own responsive website using
+                HTML, CSS and JavaScript.
+            </p>
+
+        </div>
+
+
+        <div class="achievement-card">
+
+            <div class="achievement-number">
+                03
+            </div>
+
+            <h3>
+                Project Development
+            </h3>
+
+            <p>
+                Worked on projects that combine
+                technology, creativity and problem solving.
+            </p>
+
+        </div>
+
+
+        <div class="achievement-card">
+
+            <div class="achievement-number">
+                04
+            </div>
+
+            <h3>
+                Continuous Learning
+            </h3>
+
+            <p>
+                Learning new technologies and improving
+                my technical and creative skills.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= JOURNEY ================= -->
+
+<section
+    class="journey"
+    id="journey">
+
+    <p class="small-title">
+        MY STORY
+    </p>
+
+    <h2>
+        My Journey 🚀
+    </h2>
+
+    <div class="timeline">
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">
+                1
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Started Learning
+                </h3>
+
+                <p>
+                    I began exploring technology and
+                    discovering areas that interested me.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">
+                2
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Developed New Skills
+                </h3>
+
+                <p>
+                    I started learning programming,
+                    web development and other technical skills.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">
+                3
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Built Projects
+                </h3>
+
+                <p>
+                    I began creating projects to apply
+                    what I learned in real situations.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">
+                4
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Future Goals
+                </h3>
+
+                <p>
+                    My goal is to continue learning,
+                    creating meaningful projects and
+                    achieving bigger milestones.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BLOG ================= -->
+
+<section
+    class="blog"
+    id="blog">
+
+    <p class="small-title">
+        MY STORIES
+    </p>
+
+    <h2>
+        Latest Blog Posts ✍️
+    </h2>
+
+    <div class="blog-controls">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search my blogs..."
+            onkeyup="searchBlogs()"
+        >
+
+        <select
+            id="blogFilter"
+            onchange="filterBlogs()">
+
+            <option value="all">
+                All Blogs
+            </option>
+
+            <option value="Passion">
+                Passion
+            </option>
+
+            <option value="Achievements">
+                Achievements
+            </option>
+
+            <option value="Learning">
+                Learning
+            </option>
+
+            <option value="Goals">
+                Goals
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div
+        class="blog-container"
+        id="blogContainer">
+
+
+        <!-- BLOG 1 -->
+
+        <article
+            class="blog-card"
+            data-category="Passion">
+
+            <img
+                src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80"
+                alt="Writing">
+
+            <div class="blog-content">
+
+                <span>
+                    Passion
+                </span>
+
+                <h3>
+                    Discovering My Passion
+                </h3>
+
+                <p>
+                    Finding something you enjoy can
+                    completely change the way you learn
+                    and grow.
+                </p>
+
+                <button
+                    onclick="readBlog(
+                    'Discovering My Passion',
+                    'Finding something you genuinely enjoy can make learning more meaningful. My passions continue to guide me toward new experiences and opportunities.'
+                    )">
+
+                    Read More →
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- BLOG 2 -->
+
+        <article
+            class="blog-card"
+            data-category="Achievements">
+
+            <img
+                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80"
+                alt="Achievement">
+
+            <div class="blog-content">
+
+                <span>
+                    Achievements
+                </span>
+
+                <h3>
+                    Celebrating Small Achievements
+                </h3>
+
+                <p>
+                    Every achievement, no matter how small,
+                    is an important part of the journey.
+                </p>
+
+                <button
+                    onclick="readBlog(
+                    'Celebrating Small Achievements',
+                    'Small achievements give us confidence and motivation to continue. Every milestone is a reminder that consistent effort can create progress.'
+                    )">
+
+                    Read More →
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- BLOG 3 -->
+
+        <article
+            class="blog-card"
+            data-category="Learning">
+
+            <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+                alt="Learning">
+
+            <div class="blog-content">
+
+                <span>
+                    Learning
+                </span>
+
+                <h3>
+                    What I Learned From Challenges
+                </h3>
+
+                <p>
+                    Challenges can teach us lessons that
+                    success sometimes cannot.
+                </p>
+
+                <button
+                    onclick="readBlog(
+                    'What I Learned From Challenges',
+                    'Challenges are an important part of growth. They teach patience, problem solving and the importance of continuing even when things become difficult.'
+                    )">
+
+                    Read More →
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- BLOG 4 -->
+
+        <article
+            class="blog-card"
+            data-category="Goals">
+
+            <img
+                src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800&q=80"
+                alt="Goals">
+
+            <div class="blog-content">
+
+                <span>
+                    Goals
+                </span>
+
+                <h3>
+                    My Goals for the Future
+                </h3>
+
+                <p>
+                    Setting clear goals helps turn dreams
+                    into achievable steps.
+                </p>
+
+                <button
+                    onclick="readBlog(
+                    'My Goals for the Future',
+                    'My future goals include learning continuously, building meaningful projects, improving my skills and creating opportunities to grow.'
+                    )">
+
+                    Read More →
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= CREATE BLOG ================= -->
+
+<section class="create-blog">
+
+    <p class="small-title">
+        SHARE YOUR STORY
+    </p>
+
+    <h2>
+        Create a New Blog 📝
+    </h2>
+
+    <form onsubmit="addBlog(event)">
+
+        <input
+            type="text"
+            id="blogTitle"
+            placeholder="Blog title"
+            required
+        >
+
+        <select
+            id="blogCategory"
+            required>
+
+            <option value="">
+                Select category
+            </option>
+
+            <option value="Passion">
+                Passion
+            </option>
+
+            <option value="Achievements">
+                Achievements
+            </option>
+
+            <option value="Learning">
+                Learning
+            </option>
+
+            <option value="Goals">
+                Goals
+            </option>
+
+        </select>
+
+        <textarea
+            id="blogContent"
+            placeholder="Write your story..."
+            required></textarea>
+
+        <button
+            type="submit"
+            class="main-btn">
+
+            Publish Blog
+
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section
+    class="contact"
+    id="contact">
+
+    <p class="small-title">
+        GET IN TOUCH
+    </p>
+
+    <h2>
+        Contact Me 📩
+    </h2>
+
+    <p>
+        Want to connect, share an idea or talk about
+        a project?
+    </p>
+
+    <a
+        href="mailto:yourmail@example.com"
+        class="main-btn">
+
+        Email Me
+
+    </a>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h3>
+        Nancy's Journey
+    </h3>
+
+    <p>
+        Dream • Create • Achieve • Inspire
+    </p>
+
+    <p>
+        © 2026 Nancy's Journey. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- ================= BLOG MODAL ================= -->
+
+<div
+    class="modal"
+    id="blogModal">
+
+    <div class="modal-box">
+
+        <button
+            class="close"
+            onclick="closeBlog()">
+
+            ×
+
+        </button>
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalContent"></p>
+
+    </div>
+
+</div>
+
+
+</div>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
